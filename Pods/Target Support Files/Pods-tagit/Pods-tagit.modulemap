@@ -1,0 +1,6 @@
+framework module Pods_tagit {
+  umbrella header "Pods-tagit-umbrella.h"
+
+  export *
+  module * { export * }
+}

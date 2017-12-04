@@ -1,0 +1,742 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD591F4D9118ADDE4FEE0FB9 /* Pods_tagit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3191F4927A556463B2B3C2DD /* Pods_tagit.framework */; };
+		DD98C52B1FD2009C000CF982 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98C52A1FD2009C000CF982 /* AppDelegate.swift */; };
+		DD98C52D1FD2009C000CF982 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98C52C1FD2009C000CF982 /* ViewController.swift */; };
+		DD98C5301FD2009C000CF982 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD98C52E1FD2009C000CF982 /* Main.storyboard */; };
+		DD98C5331FD2009C000CF982 /* tagit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD98C5311FD2009C000CF982 /* tagit.xcdatamodeld */; };
+		DD98C5351FD2009C000CF982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD98C5341FD2009C000CF982 /* Assets.xcassets */; };
+		DD98C5381FD2009C000CF982 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD98C5361FD2009C000CF982 /* LaunchScreen.storyboard */; };
+		DD98C5431FD2009C000CF982 /* tagitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98C5421FD2009C000CF982 /* tagitTests.swift */; };
+		DD98C54E1FD2009C000CF982 /* tagitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98C54D1FD2009C000CF982 /* tagitUITests.swift */; };
+		DD98C55C1FD20677000CF982 /* ManualTagController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98C55B1FD20677000CF982 /* ManualTagController.swift */; };
+		DD98C55F1FD225C6000CF982 /* TagButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98C55E1FD225C6000CF982 /* TagButton.swift */; };
+		DD98C5661FD382F2000CF982 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98C5651FD382F2000CF982 /* SearchController.swift */; };
+		DD98C5691FD43F1A000CF982 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98C5681FD43F1A000CF982 /* SearchTextField.swift */; };
+		DD98C56B1FD45529000CF982 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD98C56A1FD45528000CF982 /* GoogleService-Info.plist */; };
+		DD98C56D1FD466B2000CF982 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98C56C1FD466B2000CF982 /* SignUpController.swift */; };
+		DD98C5761FD4BC96000CF982 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD98C5751FD4BC96000CF982 /* FBSDKLoginKit.framework */; };
+		DD98C5781FD4BCBE000CF982 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD98C5771FD4BCBE000CF982 /* Bolts.framework */; };
+		DD98C57A1FD4BD3C000CF982 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD98C5791FD4BD3C000CF982 /* FBSDKCoreKit.framework */; };
+		DD98C57C1FD4C741000CF982 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98C57B1FD4C741000CF982 /* DatabaseService.swift */; };
+		DD98C57E1FD4CD32000CF982 /* UsernameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98C57D1FD4CD32000CF982 /* UsernameTextField.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD98C53F1FD2009C000CF982 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD98C51F1FD2009C000CF982 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD98C5261FD2009C000CF982;
+			remoteInfo = tagit;
+		};
+		DD98C54A1FD2009C000CF982 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD98C51F1FD2009C000CF982 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD98C5261FD2009C000CF982;
+			remoteInfo = tagit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3191F4927A556463B2B3C2DD /* Pods_tagit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tagit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36D7ADC4D2D772CE6BAEA24B /* Pods-tagit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tagit.release.xcconfig"; path = "Pods/Target Support Files/Pods-tagit/Pods-tagit.release.xcconfig"; sourceTree = "<group>"; };
+		DD98C5271FD2009C000CF982 /* tagit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tagit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD98C52A1FD2009C000CF982 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD98C52C1FD2009C000CF982 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD98C52F1FD2009C000CF982 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD98C5321FD2009C000CF982 /* tagit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tagit.xcdatamodel; sourceTree = "<group>"; };
+		DD98C5341FD2009C000CF982 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD98C5371FD2009C000CF982 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD98C5391FD2009C000CF982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD98C53E1FD2009C000CF982 /* tagitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tagitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD98C5421FD2009C000CF982 /* tagitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tagitTests.swift; sourceTree = "<group>"; };
+		DD98C5441FD2009C000CF982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD98C5491FD2009C000CF982 /* tagitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tagitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD98C54D1FD2009C000CF982 /* tagitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tagitUITests.swift; sourceTree = "<group>"; };
+		DD98C54F1FD2009C000CF982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD98C55B1FD20677000CF982 /* ManualTagController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualTagController.swift; sourceTree = "<group>"; };
+		DD98C55D1FD21244000CF982 /* tagit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tagit.entitlements; sourceTree = "<group>"; };
+		DD98C55E1FD225C6000CF982 /* TagButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagButton.swift; sourceTree = "<group>"; };
+		DD98C5651FD382F2000CF982 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		DD98C5681FD43F1A000CF982 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		DD98C56A1FD45528000CF982 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DD98C56C1FD466B2000CF982 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		DD98C5751FD4BC96000CF982 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../Documents/FacebookSDK1/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		DD98C5771FD4BCBE000CF982 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../Documents/FacebookSDK1/Bolts.framework; sourceTree = "<group>"; };
+		DD98C5791FD4BD3C000CF982 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../Documents/FacebookSDK1/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		DD98C57B1FD4C741000CF982 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		DD98C57D1FD4CD32000CF982 /* UsernameTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameTextField.swift; sourceTree = "<group>"; };
+		E85C7A0997CFEFAF17521751 /* Pods-tagit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tagit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tagit/Pods-tagit.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD98C5241FD2009C000CF982 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD98C5761FD4BC96000CF982 /* FBSDKLoginKit.framework in Frameworks */,
+				DD98C57A1FD4BD3C000CF982 /* FBSDKCoreKit.framework in Frameworks */,
+				DD98C5781FD4BCBE000CF982 /* Bolts.framework in Frameworks */,
+				BD591F4D9118ADDE4FEE0FB9 /* Pods_tagit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD98C53B1FD2009C000CF982 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD98C5461FD2009C000CF982 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		690AD1D4304DC1B02B9F6671 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD98C5791FD4BD3C000CF982 /* FBSDKCoreKit.framework */,
+				DD98C5771FD4BCBE000CF982 /* Bolts.framework */,
+				DD98C5751FD4BC96000CF982 /* FBSDKLoginKit.framework */,
+				3191F4927A556463B2B3C2DD /* Pods_tagit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC4152868C3D87A86EAE96E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E85C7A0997CFEFAF17521751 /* Pods-tagit.debug.xcconfig */,
+				36D7ADC4D2D772CE6BAEA24B /* Pods-tagit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD98C51E1FD2009C000CF982 = {
+			isa = PBXGroup;
+			children = (
+				DD98C5291FD2009C000CF982 /* tagit */,
+				DD98C5411FD2009C000CF982 /* tagitTests */,
+				DD98C54C1FD2009C000CF982 /* tagitUITests */,
+				DD98C5281FD2009C000CF982 /* Products */,
+				CC4152868C3D87A86EAE96E6 /* Pods */,
+				690AD1D4304DC1B02B9F6671 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DD98C5281FD2009C000CF982 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD98C5271FD2009C000CF982 /* tagit.app */,
+				DD98C53E1FD2009C000CF982 /* tagitTests.xctest */,
+				DD98C5491FD2009C000CF982 /* tagitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD98C5291FD2009C000CF982 /* tagit */ = {
+			isa = PBXGroup;
+			children = (
+				DD98C56A1FD45528000CF982 /* GoogleService-Info.plist */,
+				DD98C55D1FD21244000CF982 /* tagit.entitlements */,
+				DD98C52A1FD2009C000CF982 /* AppDelegate.swift */,
+				DD98C52C1FD2009C000CF982 /* ViewController.swift */,
+				DD98C52E1FD2009C000CF982 /* Main.storyboard */,
+				DD98C5341FD2009C000CF982 /* Assets.xcassets */,
+				DD98C5361FD2009C000CF982 /* LaunchScreen.storyboard */,
+				DD98C5391FD2009C000CF982 /* Info.plist */,
+				DD98C5311FD2009C000CF982 /* tagit.xcdatamodeld */,
+				DD98C55B1FD20677000CF982 /* ManualTagController.swift */,
+				DD98C55E1FD225C6000CF982 /* TagButton.swift */,
+				DD98C5651FD382F2000CF982 /* SearchController.swift */,
+				DD98C5681FD43F1A000CF982 /* SearchTextField.swift */,
+				DD98C56C1FD466B2000CF982 /* SignUpController.swift */,
+				DD98C57B1FD4C741000CF982 /* DatabaseService.swift */,
+				DD98C57D1FD4CD32000CF982 /* UsernameTextField.swift */,
+			);
+			path = tagit;
+			sourceTree = "<group>";
+		};
+		DD98C5411FD2009C000CF982 /* tagitTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD98C5421FD2009C000CF982 /* tagitTests.swift */,
+				DD98C5441FD2009C000CF982 /* Info.plist */,
+			);
+			path = tagitTests;
+			sourceTree = "<group>";
+		};
+		DD98C54C1FD2009C000CF982 /* tagitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD98C54D1FD2009C000CF982 /* tagitUITests.swift */,
+				DD98C54F1FD2009C000CF982 /* Info.plist */,
+			);
+			path = tagitUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD98C5261FD2009C000CF982 /* tagit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD98C5521FD2009C000CF982 /* Build configuration list for PBXNativeTarget "tagit" */;
+			buildPhases = (
+				30EB38EFF53BAD2F764EFA2A /* [CP] Check Pods Manifest.lock */,
+				DD98C5231FD2009C000CF982 /* Sources */,
+				DD98C5241FD2009C000CF982 /* Frameworks */,
+				DD98C5251FD2009C000CF982 /* Resources */,
+				BAC95E3DFFE7044C3E8EB032 /* [CP] Embed Pods Frameworks */,
+				0D56DDB06D03AC2D718267D0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tagit;
+			productName = tagit;
+			productReference = DD98C5271FD2009C000CF982 /* tagit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD98C53D1FD2009C000CF982 /* tagitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD98C5551FD2009C000CF982 /* Build configuration list for PBXNativeTarget "tagitTests" */;
+			buildPhases = (
+				DD98C53A1FD2009C000CF982 /* Sources */,
+				DD98C53B1FD2009C000CF982 /* Frameworks */,
+				DD98C53C1FD2009C000CF982 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD98C5401FD2009C000CF982 /* PBXTargetDependency */,
+			);
+			name = tagitTests;
+			productName = tagitTests;
+			productReference = DD98C53E1FD2009C000CF982 /* tagitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD98C5481FD2009C000CF982 /* tagitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD98C5581FD2009C000CF982 /* Build configuration list for PBXNativeTarget "tagitUITests" */;
+			buildPhases = (
+				DD98C5451FD2009C000CF982 /* Sources */,
+				DD98C5461FD2009C000CF982 /* Frameworks */,
+				DD98C5471FD2009C000CF982 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD98C54B1FD2009C000CF982 /* PBXTargetDependency */,
+			);
+			name = tagitUITests;
+			productName = tagitUITests;
+			productReference = DD98C5491FD2009C000CF982 /* tagitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD98C51F1FD2009C000CF982 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = EamonWhite;
+				TargetAttributes = {
+					DD98C5261FD2009C000CF982 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					DD98C53D1FD2009C000CF982 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DD98C5261FD2009C000CF982;
+					};
+					DD98C5481FD2009C000CF982 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DD98C5261FD2009C000CF982;
+					};
+				};
+			};
+			buildConfigurationList = DD98C5221FD2009C000CF982 /* Build configuration list for PBXProject "tagit" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD98C51E1FD2009C000CF982;
+			productRefGroup = DD98C5281FD2009C000CF982 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD98C5261FD2009C000CF982 /* tagit */,
+				DD98C53D1FD2009C000CF982 /* tagitTests */,
+				DD98C5481FD2009C000CF982 /* tagitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD98C5251FD2009C000CF982 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD98C5381FD2009C000CF982 /* LaunchScreen.storyboard in Resources */,
+				DD98C56B1FD45529000CF982 /* GoogleService-Info.plist in Resources */,
+				DD98C5351FD2009C000CF982 /* Assets.xcassets in Resources */,
+				DD98C5301FD2009C000CF982 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD98C53C1FD2009C000CF982 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD98C5471FD2009C000CF982 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D56DDB06D03AC2D718267D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-tagit/Pods-tagit-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tagit/Pods-tagit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30EB38EFF53BAD2F764EFA2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tagit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAC95E3DFFE7044C3E8EB032 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-tagit/Pods-tagit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tagit/Pods-tagit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD98C5231FD2009C000CF982 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD98C57C1FD4C741000CF982 /* DatabaseService.swift in Sources */,
+				DD98C55C1FD20677000CF982 /* ManualTagController.swift in Sources */,
+				DD98C5661FD382F2000CF982 /* SearchController.swift in Sources */,
+				DD98C52D1FD2009C000CF982 /* ViewController.swift in Sources */,
+				DD98C56D1FD466B2000CF982 /* SignUpController.swift in Sources */,
+				DD98C55F1FD225C6000CF982 /* TagButton.swift in Sources */,
+				DD98C5691FD43F1A000CF982 /* SearchTextField.swift in Sources */,
+				DD98C57E1FD4CD32000CF982 /* UsernameTextField.swift in Sources */,
+				DD98C5331FD2009C000CF982 /* tagit.xcdatamodeld in Sources */,
+				DD98C52B1FD2009C000CF982 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD98C53A1FD2009C000CF982 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD98C5431FD2009C000CF982 /* tagitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD98C5451FD2009C000CF982 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD98C54E1FD2009C000CF982 /* tagitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD98C5401FD2009C000CF982 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD98C5261FD2009C000CF982 /* tagit */;
+			targetProxy = DD98C53F1FD2009C000CF982 /* PBXContainerItemProxy */;
+		};
+		DD98C54B1FD2009C000CF982 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD98C5261FD2009C000CF982 /* tagit */;
+			targetProxy = DD98C54A1FD2009C000CF982 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD98C52E1FD2009C000CF982 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD98C52F1FD2009C000CF982 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD98C5361FD2009C000CF982 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD98C5371FD2009C000CF982 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD98C5501FD2009C000CF982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD98C5511FD2009C000CF982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD98C5531FD2009C000CF982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E85C7A0997CFEFAF17521751 /* Pods-tagit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = tagit/tagit.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U9867H5L6;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"~/Documents/FacebookSDK1",
+				);
+				INFOPLIST_FILE = tagit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eamon.tagit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD98C5541FD2009C000CF982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36D7ADC4D2D772CE6BAEA24B /* Pods-tagit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = tagit/tagit.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U9867H5L6;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"~/Documents/FacebookSDK1",
+				);
+				INFOPLIST_FILE = tagit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eamon.tagit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DD98C5561FD2009C000CF982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U9867H5L6;
+				INFOPLIST_FILE = tagitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eamon.tagitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tagit.app/tagit";
+			};
+			name = Debug;
+		};
+		DD98C5571FD2009C000CF982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U9867H5L6;
+				INFOPLIST_FILE = tagitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eamon.tagitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tagit.app/tagit";
+			};
+			name = Release;
+		};
+		DD98C5591FD2009C000CF982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U9867H5L6;
+				INFOPLIST_FILE = tagitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eamon.tagitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tagit;
+			};
+			name = Debug;
+		};
+		DD98C55A1FD2009C000CF982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U9867H5L6;
+				INFOPLIST_FILE = tagitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eamon.tagitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tagit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD98C5221FD2009C000CF982 /* Build configuration list for PBXProject "tagit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD98C5501FD2009C000CF982 /* Debug */,
+				DD98C5511FD2009C000CF982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD98C5521FD2009C000CF982 /* Build configuration list for PBXNativeTarget "tagit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD98C5531FD2009C000CF982 /* Debug */,
+				DD98C5541FD2009C000CF982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD98C5551FD2009C000CF982 /* Build configuration list for PBXNativeTarget "tagitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD98C5561FD2009C000CF982 /* Debug */,
+				DD98C5571FD2009C000CF982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD98C5581FD2009C000CF982 /* Build configuration list for PBXNativeTarget "tagitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD98C5591FD2009C000CF982 /* Debug */,
+				DD98C55A1FD2009C000CF982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DD98C5311FD2009C000CF982 /* tagit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DD98C5321FD2009C000CF982 /* tagit.xcdatamodel */,
+			);
+			currentVersion = DD98C5321FD2009C000CF982 /* tagit.xcdatamodel */;
+			path = tagit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DD98C51F1FD2009C000CF982 /* Project object */;
+}

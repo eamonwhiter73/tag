@@ -24,9 +24,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GMSServices.provideAPIKey("AIzaSyASO3ejlPKkDD97NVXVsMat4p3ifq1d4Ww")
         GMSPlacesClient.provideAPIKey("AIzaSyASO3ejlPKkDD97NVXVsMat4p3ifq1d4Ww")
         
-        let rootViewController = SignUpController()
+        let userDefaults = UserDefaults()
+        if(userDefaults.value(forKey: "username") != nil) {
+            let rootViewController = ViewController()
+            self.window?.rootViewController = rootViewController
+        }
+        else {
+            let rootViewController = SignUpController()
+            self.window?.rootViewController = rootViewController
+        }
         
-        self.window?.rootViewController = rootViewController
         self.window?.makeKeyAndVisible()
         return true
     }

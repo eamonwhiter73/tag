@@ -12,6 +12,7 @@ import UIKit
 class ManualTagController: UIViewController, UITextFieldDelegate {
     let addTagButton = UIButton()
     let tagTextfield = UITextField()
+    var addingTag: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +52,11 @@ class ManualTagController: UIViewController, UITextFieldDelegate {
     @objc private func addTag() {
         //Database service code here...
         print("in addTag .........")
+        addingTag = 1
+        
+        if let myParent = self.parent as? ViewController {
+            myParent.locationManager.startUpdatingLocation()
+        }
         //This will go where service is done and it is successful
     }
     

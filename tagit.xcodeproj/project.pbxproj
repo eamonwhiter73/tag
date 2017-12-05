@@ -27,6 +27,11 @@
 		DD98C57A1FD4BD3C000CF982 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD98C5791FD4BD3C000CF982 /* FBSDKCoreKit.framework */; };
 		DD98C57C1FD4C741000CF982 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98C57B1FD4C741000CF982 /* DatabaseService.swift */; };
 		DD98C57E1FD4CD32000CF982 /* UsernameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98C57D1FD4CD32000CF982 /* UsernameTextField.swift */; };
+		DD98C5801FD4EFB7000CF982 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98C57F1FD4EFB6000CF982 /* PasswordTextField.swift */; };
+		DD98C6C71FD5FAC7000CF982 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD98C6C61FD5FAC7000CF982 /* CommonCrypto.framework */; };
+		DD98C6C81FD5FAED000CF982 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD98C6C61FD5FAC7000CF982 /* CommonCrypto.framework */; };
+		DD98C6C91FD5FAED000CF982 /* CommonCrypto.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DD98C6C61FD5FAC7000CF982 /* CommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD98C6CB1FD61157000CF982 /* EncryptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98C6CA1FD61157000CF982 /* EncryptionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,19 @@
 			remoteInfo = tagit;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DD98C59B1FD4FDC8000CF982 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DD98C6C91FD5FAED000CF982 /* CommonCrypto.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3191F4927A556463B2B3C2DD /* Pods_tagit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tagit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +93,9 @@
 		DD98C5791FD4BD3C000CF982 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../Documents/FacebookSDK1/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		DD98C57B1FD4C741000CF982 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		DD98C57D1FD4CD32000CF982 /* UsernameTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameTextField.swift; sourceTree = "<group>"; };
+		DD98C57F1FD4EFB6000CF982 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		DD98C6C61FD5FAC7000CF982 /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = "../../Library/Developer/Xcode/DerivedData/CommonCrypto-cdnzugujnzcswpavkmcdzvbwcggg/Build/Products/Debug-iphoneos/CommonCrypto.framework"; sourceTree = "<group>"; };
+		DD98C6CA1FD61157000CF982 /* EncryptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionService.swift; sourceTree = "<group>"; };
 		E85C7A0997CFEFAF17521751 /* Pods-tagit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tagit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tagit/Pods-tagit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +107,8 @@
 				DD98C5761FD4BC96000CF982 /* FBSDKLoginKit.framework in Frameworks */,
 				DD98C57A1FD4BD3C000CF982 /* FBSDKCoreKit.framework in Frameworks */,
 				DD98C5781FD4BCBE000CF982 /* Bolts.framework in Frameworks */,
+				DD98C6C71FD5FAC7000CF982 /* CommonCrypto.framework in Frameworks */,
+				DD98C6C81FD5FAED000CF982 /* CommonCrypto.framework in Frameworks */,
 				BD591F4D9118ADDE4FEE0FB9 /* Pods_tagit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,6 +133,7 @@
 		690AD1D4304DC1B02B9F6671 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DD98C6C61FD5FAC7000CF982 /* CommonCrypto.framework */,
 				DD98C5791FD4BD3C000CF982 /* FBSDKCoreKit.framework */,
 				DD98C5771FD4BCBE000CF982 /* Bolts.framework */,
 				DD98C5751FD4BC96000CF982 /* FBSDKLoginKit.framework */,
@@ -168,6 +192,8 @@
 				DD98C56C1FD466B2000CF982 /* SignUpController.swift */,
 				DD98C57B1FD4C741000CF982 /* DatabaseService.swift */,
 				DD98C57D1FD4CD32000CF982 /* UsernameTextField.swift */,
+				DD98C57F1FD4EFB6000CF982 /* PasswordTextField.swift */,
+				DD98C6CA1FD61157000CF982 /* EncryptionService.swift */,
 			);
 			path = tagit;
 			sourceTree = "<group>";
@@ -203,6 +229,7 @@
 				DD98C5251FD2009C000CF982 /* Resources */,
 				BAC95E3DFFE7044C3E8EB032 /* [CP] Embed Pods Frameworks */,
 				0D56DDB06D03AC2D718267D0 /* [CP] Copy Pods Resources */,
+				DD98C59B1FD4FDC8000CF982 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -403,6 +430,7 @@
 			files = (
 				DD98C57C1FD4C741000CF982 /* DatabaseService.swift in Sources */,
 				DD98C55C1FD20677000CF982 /* ManualTagController.swift in Sources */,
+				DD98C6CB1FD61157000CF982 /* EncryptionService.swift in Sources */,
 				DD98C5661FD382F2000CF982 /* SearchController.swift in Sources */,
 				DD98C52D1FD2009C000CF982 /* ViewController.swift in Sources */,
 				DD98C56D1FD466B2000CF982 /* SignUpController.swift in Sources */,
@@ -410,6 +438,7 @@
 				DD98C5691FD43F1A000CF982 /* SearchTextField.swift in Sources */,
 				DD98C57E1FD4CD32000CF982 /* UsernameTextField.swift in Sources */,
 				DD98C5331FD2009C000CF982 /* tagit.xcdatamodeld in Sources */,
+				DD98C5801FD4EFB7000CF982 /* PasswordTextField.swift in Sources */,
 				DD98C52B1FD2009C000CF982 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,6 +614,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"~/Documents/FacebookSDK1",
+					"/Users/eamonwhite/Library/Developer/Xcode/DerivedData/CommonCrypto-cwktftxwoyeazacipgszddojyiof/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = tagit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

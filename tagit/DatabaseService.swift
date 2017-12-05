@@ -16,8 +16,8 @@ class DatabaseService: NSObject {
         ref = Database.database().reference()
     }
     
-    func setUser(uid: String, username: String, email: String, firstName: String, lastName: String) {
-        self.ref.child(uid).setValue(["username": username, "email": email, "firstName": firstName, "lastName": lastName])
+    func setUser(uid: String, username: String, password: String, email: String, firstName: String, lastName: String) {
+        self.ref.child(uid).setValue(["username": username, "password": password, "email": email, "firstName": firstName, "lastName": lastName])
     }
     
 }

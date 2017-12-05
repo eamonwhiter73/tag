@@ -12,14 +12,16 @@ import FBSDKLoginKit
 import FirebaseAuth
 
 class SignUpController: UIViewController, FBSDKLoginButtonDelegate, UITextFieldDelegate {
-    let usernameTextField = UsernameTextField()
-    let databaseService = DatabaseService()
+    let usernameTextField: UsernameTextField? = UsernameTextField()
+    let passwordTextField: PasswordTextField? = PasswordTextField()
     
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith resultLogin: FBSDKLoginManagerLoginResult!, error: Error!) {
         if error != nil {
             print(error.localizedDescription)
         } else if resultLogin.isCancelled {
             print("cancelled")
+        } else if(self.usernameTextField == nil || self.passwordTextField == nil) {
+            print("You need a username and password")
         } else {
             if((FBSDKAccessToken.current()) != nil) {
                 FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name, last_name, email"]).start(completionHandler: { (connection, result, error) -> Void in
@@ -37,7 +39,32 @@ class SignUpController: UIViewController, FBSDKLoginButtonDelegate, UITextFieldD
                             print("user is signed in: " + Auth.auth().currentUser!.uid)
                             let uid = Auth.auth().currentUser!.uid
                             if let resultTemp = result as? [String:Any] {
-                                self.databaseService.setUser(uid: uid, username: self.usernameTextField.text!, email: resultTemp["email"] as! String, firstName: resultTemp["first_name"] as! String, lastName: resultTemp["last_name"] as! String)
+                                guard let username = self.usernameTextField?.text else {
+                                    print("No username to submit")
+                                    return
+                                }
+                                
+                                guard let password = self.passwordTextField?.text else {
+                                    print("No password to submit")
+                                    return
+                                }
+                                
+                                let userDefaults = UserDefaults()
+                                userDefaults.set(username, forKey: "username")
+                                
+                                let encryptionService = EncryptionService()
+                                let encryptedPassword = encryptionService.AESEncryption(phrase: password, key: "fordecrypt", ivKey: "bonjour3bonjour3", encryptOrDecrypt: true)
+                                userDefaults.set(encryptedPassword, forKey: "password") // ENCRYPTION
+                                
+                                guard let pw = encryptedPassword else {
+                                    print("no password")
+                                    return
+                                }
+                                
+                                let pwNSDATA = pw as NSData
+                                
+                                let databaseService = DatabaseService()
+                                databaseService.setUser(uid: uid, username: username, password: pwNSDATA.base64EncodedString(options: NSData.Base64EncodingOptions.lineLength64Characters), email: resultTemp["email"] as! String, firstName: resultTemp["first_name"] as! String, lastName: resultTemp["last_name"] as! String)
                                 
                                 let viewController = ViewController()
                                 UIApplication.shared.delegate?.window??.rootViewController = viewController
@@ -75,13 +102,16 @@ class SignUpController: UIViewController, FBSDKLoginButtonDelegate, UITextFieldD
         let loginButton = FBSDKLoginButton()
         loginButton.readPermissions = ["public_profile", "email"]
         loginButton.delegate = self
-        loginButton.frame = CGRect(x: viewWidth/2 - 1/6 * viewWidth, y: self.view.frame.height/2 + 32, width: 1/3 * viewWidth, height: 30)
+        loginButton.frame = CGRect(x: viewWidth/2 - 1/6 * viewWidth, y: self.view.frame.height/2 + 86, width: 1/3 * viewWidth, height: 30)
         view.addSubview(loginButton)
         
+        self.usernameTextField?.delegate = self
+        self.usernameTextField?.frame = CGRect(x: viewWidth/5, y: self.view.frame.height/2 - 22, width: viewWidth - 2/5 * viewWidth, height:44.0)
+        view.addSubview(usernameTextField!)
         
-        usernameTextField.delegate = self
-        usernameTextField.frame = CGRect(x: viewWidth/5, y: self.view.frame.height/2 - 22, width: viewWidth - 2/5 * viewWidth, height:44.0)
-        view.addSubview(usernameTextField)
+        self.passwordTextField?.delegate = self
+        self.passwordTextField?.frame = CGRect(x: viewWidth/5, y: self.view.frame.height/2 + 32, width: viewWidth - 2/5 * viewWidth, height:44.0)
+        view.addSubview(self.passwordTextField!)
     }
     
     override func viewDidLayoutSubviews() {
